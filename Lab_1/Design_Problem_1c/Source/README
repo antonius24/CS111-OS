@@ -1,0 +1,6 @@
+Design Probelm --- Lab 1c
+Xiao Liu 804017205
+Sau Man Kwan 204072370
+
+Usage: ./timetrash -t N file_name
+N is the number of process limit
