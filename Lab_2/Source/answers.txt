@@ -1,0 +1,23 @@
+# Fill in your name, student ID, and email address in this file.
+
+# If you are working in a team, remove the # signs from the three lines for
+# partner 2 below and fill them in as well. Please submit the lab to CourseWeb
+# only once (from only one partner). This file will be automatically parsed in
+# order to give both team members credit for the lab.
+
+# If you have any other information you'd like us to know, please add it at
+# the end of the file.
+
+# Partner 1
+Name: Xiao Liu
+Student ID: 804017205
+Email: liuxiao@ucla.edu
+
+# Partner 2
+Name: Sau Man Kuan
+Student ID: 204072370
+Email: kuansm@ucla.edu
+
+
+# Add any other information you'd like us to have below this line.
+Have finished all the requirements. However, there is a bug in the program. The program could always pass the test for the first time. But if I run the test for continually two times, it will stuck at some line at the second time. I could not find the reason. Sorry about that.
