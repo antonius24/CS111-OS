@@ -1,0 +1,65 @@
+Name: Xiao Liu
+UCLA ID: 804017205
+
+Collaborators:
+
+-------------------------------------------------------------------------------
+
+Response to Exercise 1:
+
+The name of the scheduling algorithm is: round robin
+
+
+(Exercise 2 is a coding exercise)
+
+
+Response to Exercise 3:
+
+Average turnaround time for scheduling_algorithm 0:
+task A: 319 * 4 + 1 = 1277 milliseconds
+task B: 319 * 4 + 2 = 1278 milliseconds
+task C: 319 * 4 + 3 = 1279 milliseconds
+task D: 319 * 4 + 4 = 1280 milliseconds
+Thus, average turnaround time: 
+(1277 + 1278 + 1279 + 1280) / 4 = 1278.5 milliseconds
+
+Average turnaround time for scheduling_algorithm 1:
+task A: 320 milliseconds
+task B: 320 * 2 = 640 milliseconds
+task C: 320 * 3 = 960 milliseconds
+task D: 320 * 4 = 1280 milliseconds
+Thus, average turnaround time:
+(320 + 640 + 960 + 1280) / 4 = 800 milliseconds
+
+Average wait time for scheduling_algorithm 0:
+task A: 0 millisecond
+task B: 1 millisecond
+task C: 2 milliseconds
+task D: 3 milliseconds
+Thus, average wait time:
+(0 + 1 + 2 + 3) / 4 = 1.5 milliseconds
+
+Average wait time for scheduling_algorithm 1:
+task A: 0 millisecond
+task B: 320 milliseconds
+task C: 640 milliseconds
+task D: 960 milliseconds
+Thus, average wait time:
+(0 + 320 + 640 + 960) / 4 = 480 milliseconds
+
+Exercise 4:
+
+Did you complete Exercise 4A, Exercise 4B, or both for extra credit?
+Both
+
+Exercise 5:
+During the execution of process 4 does the first known timer interrupt occur. If no interrupt occur, the output should be continually "1234". However, at the fifth one, we just see "123" rather than "1234". So the first timer interrupt occurs here at process 4.
+
+(Exercise 6 is a coding exercise)
+
+
+Anything else you'd like us to know:
+
+
+
+Extra credit exercises:

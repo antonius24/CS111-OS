@@ -1,0 +1,10 @@
+obj/mpos-app.o: mpos-app.c mpos-app.h mpos.h types.h lib.h
+obj/mpos-kern.o: mpos-kern.c mpos-kern.h mpos.h types.h x86.h lib.h
+obj/mpos-int.o: mpos-int.S
+obj/mpos-loader.o: mpos-loader.c x86.h types.h elf.h lib.h mpos-kern.h \
+ mpos.h
+obj/mpos-app2.o: mpos-app2.c mpos-app.h mpos.h types.h lib.h
+obj/mpos-x86.o: mpos-x86.c mpos-kern.h mpos.h types.h x86.h lib.h
+obj/bootstart.o: bootstart.S
+obj/lib.o: lib.c lib.h types.h
+obj/mpos-boot.o: mpos-boot.c x86.h types.h elf.h

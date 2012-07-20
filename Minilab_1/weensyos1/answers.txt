@@ -1,0 +1,20 @@
+Name: Xiao Liu
+UCLA ID: 804017205
+
+Collaborators:
+
+-------------------------------------------------------------------------------
+
+Response to Exercise 1:
+The sys_getpid() will return the correct value. As shown in the schedule(), it just find the next runnable process, and pass in the process pointer to run(). The run() will reloading all the registers from the process pointer. So the original process registers values will not be effected because it is stored in its own process struct. When the process that call sys_getpid() eventually run again, the run() will just reload all the registers from that process. The pid will then be returned by eax register. 
+ 
+Anything else you'd like us to know:
+Response to Exercise 3:
+In order to implement the waiting queue for the calling process, I add a array in the process descriptor structure. The array will record all the processes that are waiting for this process. When the process decides to exit, it will notify the kernel to wake up all these waiting processes.
+
+Response to Exercise 4:
+The bug of the program is that it will not restore the process status from ZOMBIE to EMPTY when some other processes are waiting it or when it calls exit. This leads to depletion of processes resource as all of them bemcom ZOMBIE.
+
+To fix this bug, we need to modify the wait part in the kernel. When the process has become ZOMBIE, if some process then call wait for it, its status should become EMPTY(mpos-kern.c line 202-207). We should also modify the exit part. When one process is waited by other process, it should set its status to EMPTY when it exits(mpos-kern.c line 178-184). 
+
+Extra credit exercises:
